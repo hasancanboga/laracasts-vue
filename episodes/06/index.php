@@ -45,7 +45,7 @@
 
 	<script>
 		
-		new Vue({
+		app = new Vue({
 			el: '#root',
 			data() {
 				return {
@@ -76,7 +76,7 @@
 						return !task.completed;
 					}); // ES5 Syntax
 				}
-				// NOW GO TO THE CONSOLE, and type this: app.tasks[0].completed = false
+				// NOW GO TO THE CONSOLE, and type this: app.tasks[3].completed = false
 				// the first task should jump from completed to incomplete.
 			},
 

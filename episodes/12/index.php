@@ -14,8 +14,8 @@
 <body style='color: white; padding-top: 40px;'>
 
 	<div id='root' class='container'>
-		
-		
+		<coupon @applied="onCouponApplied"></coupon>
+		<h1 v-if="couponApplied">You used a coupon!</h1>
 	</div>
 
 	<script src='main.js'></script>

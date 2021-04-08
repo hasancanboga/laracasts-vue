@@ -15,10 +15,23 @@
 
 	<div id='root' class='container'>
 		
-		
-	</div>
+		<modal>
+			<!-- why use template instead of div: template element gets stripped so we wont see a 'div' inside a '<p>' when inspecting element.
+				can do this in footer too if necessary -->
+				<template slot='header'> asdasd</template> 
 
-	<script src='main.js'></script>
+				this content will appear where default slot is. no need to give it a name. header and footer slots are named.
 
-</body>
-</html>
+				<div slot='footer'> 
+					<button class="button is-success">Save changes</button>
+					<button class="button">Cancel</button>
+				</div>
+
+			</modal>
+
+		</div>
+
+		<script src='main.js'></script>
+
+	</body>
+	</html>
