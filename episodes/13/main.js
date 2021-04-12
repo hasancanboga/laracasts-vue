@@ -1,13 +1,13 @@
 window.Event = new class { // custom event dispatcher. just a wrapper. can use this.$emit instead of Event.fire inside Vue components.
-	constructor(){
+	constructor() {
 		this.vue = new Vue();
 	}
 
-	fire(event, data = null){
+	fire(event, data = null) {
 		this.vue.$emit(event, data)
 	}
 
-	listen(event, callback){
+	listen(event, callback) {
 		this.vue.$on(event, callback)
 	}
 }
@@ -15,8 +15,8 @@ window.Event = new class { // custom event dispatcher. just a wrapper. can use t
 Vue.component('coupon', {
 	template: '<input placeholder="Enter your coupon code" @blur="onCouponApplied">',
 
-	methods:{
-		onCouponApplied(){
+	methods: {
+		onCouponApplied() {
 			Event.fire('applied');
 		}
 	}
@@ -25,12 +25,12 @@ Vue.component('coupon', {
 new Vue({
 	el: '#root',
 
-	data:{
+	data: {
 		couponApplied: false,
 		onCouponApplied: false
 	},
 
-	created(){
+	created() {
 		Event.listen('applied', () => alert('Handling it!'));
 	}
 })

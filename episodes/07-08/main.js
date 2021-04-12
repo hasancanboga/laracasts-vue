@@ -10,13 +10,13 @@ Vue.component('task-list', {
 	</div>
 	`,
 
-	data(){
+	data() {
 		return {
 			tasks: [
-			{ description: 'Go to the store', completed: true },
-			{ description: 'Clear inbox', completed: false },
-			{ description: 'Make dinner', completed: false },
-			{ description: 'Clean room', completed: true },
+				{ description: 'Go to the store', completed: true },
+				{ description: 'Clear inbox', completed: false },
+				{ description: 'Make dinner', completed: false },
+				{ description: 'Clean room', completed: true },
 			]
 		}
 	}

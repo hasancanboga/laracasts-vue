@@ -1,5 +1,5 @@
 Vue.component('progress-view', {
-	data(){
+	data() {
 		return {
 			completionRate: 50,
 		}

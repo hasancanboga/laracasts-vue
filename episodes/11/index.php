@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"  style='background-color: #222;'>
+<html lang="en" style='background-color: #222;'>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 
 	<!-- <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>  -->
-	<script src="https://unpkg.com/vue@2.6.12"></script> 
+	<script src="https://unpkg.com/vue@2.6.12"></script>
 
 </head>
+
 <body style='color: white; padding-top: 40px;'>
 
 	<div id='root' class='container'>
@@ -26,7 +28,7 @@
 			<tab name='About Our Vision'>
 				<h2>Here is the content for the about our vision tab</h2>
 			</tab>
-			
+
 		</tabs>
 
 	</div>
@@ -34,4 +36,5 @@
 	<script src='main.js'></script>
 
 </body>
+
 </html>

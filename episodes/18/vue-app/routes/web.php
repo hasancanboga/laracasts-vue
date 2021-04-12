@@ -18,7 +18,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('skills', function(){
+Route::get('skills', function () {
 	return ['Laravel', 'Vue', 'PHP', 'JavaScript', 'Tooling'];
 });
-

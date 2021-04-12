@@ -1,7 +1,7 @@
 Vue.component('coupon', {
 	template: '<input placeholder="Enter your coupon code" @blur="onCouponApplied">',
-	methods:{
-		onCouponApplied(){
+	methods: {
+		onCouponApplied() {
 			this.$emit('applied', this.coupon)
 		}
 	}
@@ -9,11 +9,11 @@ Vue.component('coupon', {
 
 new Vue({
 	el: '#root',
-	data:{
+	data: {
 		couponApplied: false
 	},
-	methods:{
-		onCouponApplied(){
+	methods: {
+		onCouponApplied() {
 			this.couponApplied = true
 		}
 	}

@@ -13,13 +13,13 @@ Vue.component('message', {
 	</article>
 	`,
 
-	data(){
+	data() {
 		return {
 			isVisible: true
 		}
 	},
 	methods: {
-		
+
 	}
 })
 

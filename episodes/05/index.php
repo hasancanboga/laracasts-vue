@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,19 @@
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
 
 	<!-- <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>  -->
-	<script src="https://unpkg.com/vue@2.6.12"></script> 
+	<script src="https://unpkg.com/vue@2.6.12"></script>
 
 	<style>
-		.is-loading{
+		.is-loading {
 			background: red;
 		}
 	</style>
 
 </head>
+
 <body style='background-color: #222; color: white'>
 
-	<div id='root'> 
+	<div id='root'>
 		<!-- Attribute and class binding -->
 
 		<button @click='' :title='title'> Hover Over Me</button>
@@ -32,7 +34,6 @@
 	</div>
 
 	<script>
-		
 		var app = new Vue({
 			el: '#root',
 			data() {
@@ -41,21 +42,21 @@
 					isLoading: false,
 					disabled: false,
 				}
-			}, 
+			},
 			methods: {
-				toggleClass(){
+				toggleClass() {
 					this.isLoading = true
-				},		
-				toggleDisabled(){
+				},
+				toggleDisabled() {
 					this.disabled = true
 				},
 			},
-			mounted(){
+			mounted() {
 
 			}
 		})
-
 	</script>
 
 </body>
+
 </html>

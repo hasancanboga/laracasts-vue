@@ -15,20 +15,20 @@ Vue.component('tabs', {
 			</div>
 		</div>
 		`,
-		created(){
-			this.tabs = this.$children
-		},
-		data(){
-			return { tabs: [] }
-		},
-		methods: {
-			selectTab(selectedTab){
-				this.tabs.forEach(tab => {
-					tab.isActive = (tab.name == selectedTab.name);
-				})
-			}
+	created() {
+		this.tabs = this.$children
+	},
+	data() {
+		return { tabs: [] }
+	},
+	methods: {
+		selectTab(selectedTab) {
+			this.tabs.forEach(tab => {
+				tab.isActive = (tab.name == selectedTab.name);
+			})
 		}
-	})
+	}
+})
 
 Vue.component('tab', {
 	template: `
@@ -40,17 +40,17 @@ Vue.component('tab', {
 		name: { required: true },
 		selected: { default: false }
 	},
-	data(){
+	data() {
 		return {
 			isActive: false
 		}
 	},
 	computed: {
-		href(){
+		href() {
 			return '#' + this.name.toLowerCase().replace(/ /g, '-')
 		}
 	},
-	mounted(){
+	mounted() {
 		this.isActive = this.selected
 	}
 })

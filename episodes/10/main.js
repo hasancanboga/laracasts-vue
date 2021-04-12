@@ -18,12 +18,12 @@ Vue.component('modal', {
 
 new Vue({
 	el: '#root',
-	data(){
+	data() {
 		return {
 			showModal: false,
 		}
 	},
-	methods:{
+	methods: {
 
 	}
 })
