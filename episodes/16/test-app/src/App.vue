@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <message> Hello There </message>
-    <message> Hello Again Sir </message>
+    <message>Hello There</message>
+    <message>General Kenobi</message>
   </div>
 </template>
 
 <script>
 import Message from "./components/Message.vue";
-
 export default {
   name: "app",
   components: { Message },
   data() {
-    return {};
+    return {
+      msg: "Welcome to Your Vue.js App",
+    };
   },
 };
 </script>
 
-<style lang="scss"></style>
+<style></style>
