@@ -1,0 +1,10 @@
+# This is the old version of creating a vue project. On new projects, there is no webpack.config, it's created on the fly or
+# there could be a vue.config file. not sure. will update this if I learn.
+
+npm install -g @vue/cli @vue/cli-init
+
+vue init webpack-simple test-app
+
+cd test-app
+
+npm run dev

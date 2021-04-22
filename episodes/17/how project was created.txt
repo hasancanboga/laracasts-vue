@@ -1,0 +1,9 @@
+# this is different from how jeffrey does it on laracasts. because the docs now recommend doing it this way.
+
+npm install -g @vue/cli
+
+vue create lesson
+
+cd lesson
+
+npm  run serve
