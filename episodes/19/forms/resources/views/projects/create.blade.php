@@ -17,7 +17,7 @@
 <body>
     <div id="app" class="container">
         {{-- @include ('projects.list') --}}
-        <form action="projects" method='POST'>
+        <form action="/projects" method='POST' @submit.prevent="onSubmit"> 
 
             <div class="control">
                 <label for="name" class='label'>Project Name:</label>

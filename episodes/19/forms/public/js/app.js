@@ -7,6 +7,8 @@ new Vue({
         }
     },
     methods: {
-
+        onSubmit(){
+            axios.post('/projects', this.$data)
+        }
     }
 })
