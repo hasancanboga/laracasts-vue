@@ -1,6 +1,7 @@
 services:
     php:
         container_name: php
+        restart: always
         build:
             context: .
             dockerfile: Dockerfile
