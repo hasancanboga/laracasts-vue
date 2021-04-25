@@ -65,8 +65,8 @@ class Form {
      * @param {object} data
      */
     constructor(data) {
+        this.isLoading = false
         this.originalData = data;
-
         for (let field in data) { // so we can say form.name instead of form.data.name
             this[field] = data[field];
         }
@@ -141,6 +141,7 @@ class Form {
      * @param {string} url
      */
     submit(requestType, url) {
+        this.isLoading = true
         return new Promise((resolve, reject) => {
             axios[requestType](url, this.data())
                 .then((response) => {
@@ -152,6 +153,9 @@ class Form {
                     this.onFail(error.response.data.errors)
 
                     reject(error.response.data.errors)
+                })
+                .then(() => {
+                    this.isLoading = false
                 })
         })
 
