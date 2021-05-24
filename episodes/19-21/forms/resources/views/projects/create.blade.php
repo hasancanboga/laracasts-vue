@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="has-background-dark">
 
 <head>
     <meta charset="UTF-8">
@@ -14,20 +14,20 @@
     </style>
 </head>
 
-<body>
+<body class="">
     <div id="app" class="container">
         {{-- @include ('projects.list') --}}
         <form action="/projects" method='POST' @submit.prevent="onSubmit"
             @keydown="form.errors.clear($event.target.name)">
 
             <div class="control">
-                <label for="name" class='label'>Project Name:</label>
+                <label for="name" class='label has-text-white'>Project Name:</label>
                 <input type="text" id='name' name="name" class="input" v-model="form.name">
                 <span class="help is-danger" v-if="form.errors.has('name')" v-text="form.errors.get('name')"></span>
             </div>
             <br>
             <div class="control">
-                <label for="description" class='label'>Project Description:</label>
+                <label for="description" class='labell has-text-white'>Project Description:</label>
                 <input type="text" id='description' name="description" class="input" v-model="form.description">
                 <span class="help is-danger" v-if="form.errors.has('description')"
                     v-text="form.errors.get('description')"></span>
